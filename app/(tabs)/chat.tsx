@@ -13,7 +13,7 @@ export default function ChatScreen() {
         user: {
           _id: 2,
           name: 'React Native',
-          avatar: 'https://placeimg.com/140/140/any',
+          avatar: 'https://gravatar.com/avatar/4a3d54b7d4a20c101776e8de28ab4566?s=400&d=robohash&r=x',
         },
       },
     ])
