@@ -57,27 +57,7 @@ export default function TabLayout() {
           ),
         }}
       />
-      <Tabs.Screen
-        name="explore"
-        options={{
-          title: 'Explore', 
-          tabBarIcon: ({ color, focused }) => ( 
-            <Animated.View
-              style={[
-                styles.tabIconContainer, 
-                focused && styles.activeTabIconContainer, 
-                { opacity: fadeAnim }, 
-              ]}
-            >
-              <TabBarIcon 
-                name={focused ? 'person' : 'person-outline'} 
-                color={color} 
-                size={24} 
-              />
-            </Animated.View>
-          ),
-        }}
-      />
+     
       <Tabs.Screen
         name="chat"
         options={{
