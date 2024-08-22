@@ -1,4 +1,6 @@
-# Welcome to your Expo app 👋
+# Welcome to this little demo for my application with Ligue Nationale contre le cancer 👋
+
+
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
