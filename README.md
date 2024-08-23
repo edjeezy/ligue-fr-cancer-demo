@@ -20,10 +20,6 @@
 </a></td></tr><tr></tr></table></div>
 
 
-![SCREEN 1](https://github.com/edjeezy/ligue-fr-cancer-demo/blob/master/assets/images/Screenshot_2024-08-22-16-19-36-752_host.exp.exponent.jpg)
-
-
-![SCREEN 2](https://github.com/edjeezy/ligue-fr-cancer-demo/blob/master/assets/images/Screenshot_2024-08-22-16-19-32-925_host.exp.exponent.jpg)
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
