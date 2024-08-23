@@ -1,5 +1,25 @@
 # Welcome to this little demo for my application with Ligue Nationale contre le cancer 👋
 
+<div align="center">
+<table border=0 style="border: 1.2px solid #c6c6c6 !important; border-spacing: 2px; width: auto !important;">
+<tr><td valign=top style="border: 1.2px solid #c6c6c6 !important; padding: 2px !important;">
+<a href="URL_of_screenshot_1" target="_blank">
+<div align=center valign=top><img src="https://github.com/edjeezy/ligue-fr-cancer-demo/blob/master/assets/images/splash.jpg" alt="Screenshot 1" style="margin: 0px !important; height: 200px !important;">
+<p>Splash Screen</p>
+</div>
+</a></td><td valign=top style="border: 1.2px solid #c6c6c6 !important; padding: 2px !important;">
+<a href="URL_of_screenshot_2" target="_blank">
+<div align=center valign=top><img src="https://github.com/edjeezy/ligue-fr-cancer-demo/blob/master/assets/images/feed.jpg" alt="Screenshot 2" style="margin: 0px !important; height: 200px !important;">
+<p>Social Network</p>
+</div>
+</a></td><td valign=top style="border: 1.2px solid #c6c6c6 !important; padding: 2px !important;">
+<a href="URL_of_screenshot_3" target="_blank">
+<div align=center valign=top><img src="https://github.com/edjeezy/ligue-fr-cancer-demo/blob/master/assets/images/chat.jpg" alt="Screenshot 3" style="margin: 0px !important; height: 200px !important;">
+<p>Chat</p>
+</div>
+</a></td></tr><tr></tr></table></div>
+
+
 ![SCREEN 1](https://github.com/edjeezy/ligue-fr-cancer-demo/blob/master/assets/images/Screenshot_2024-08-22-16-19-36-752_host.exp.exponent.jpg)
 
 
