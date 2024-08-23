@@ -9,7 +9,7 @@ export default function ChatScreen() {
     setMessages([
       {
         _id: 1,
-        text: 'Hello developer',
+        text: 'Bonjour, je suis votre asssistant personnel. Comment puis-je vous aider ?',
         createdAt: new Date(),
         user: {
           _id: 2,

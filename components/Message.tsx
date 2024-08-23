@@ -20,9 +20,9 @@ export function Message({
         <TouchableOpacity
           activeOpacity={0.75}
           onPress={() => {
-            navigation.navigate('Profile', {
+           /*  navigation.navigate('Profile', {
               userId,
-            });
+            }); */
           }}
           style={styles.profileLayout}>
           <Avatar size={36} userId={userId} style={styles.avatar} />
