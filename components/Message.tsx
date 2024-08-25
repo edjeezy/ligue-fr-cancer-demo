@@ -2,7 +2,7 @@ import { TouchableOpacity, Text, View, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
-import USERS from '../data/users';
+import USERS from '@/data/users';
 import { Avatar } from './Avatar';
 
 export function Message({

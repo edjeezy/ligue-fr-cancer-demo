@@ -61,7 +61,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="chat"
         options={{
-          title: 'Messages', 
+          title: 'AI Chat', 
           tabBarIcon: ({ color, focused }) => ( 
             <Animated.View
               style={[

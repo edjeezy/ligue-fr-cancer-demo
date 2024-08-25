@@ -1,7 +1,7 @@
 import { View, StyleSheet, Image } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
-import USERS from '../data/users';
+import USERS from '@/data/users';
 
 export function Avatar({ userId, style, size = 36 }: {userId: number, style: any, size: number}) {
   const SIZING = {

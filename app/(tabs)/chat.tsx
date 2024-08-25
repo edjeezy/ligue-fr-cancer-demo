@@ -2,8 +2,8 @@ import React, { useState, useCallback, useEffect, useRef } from 'react'
 import { GiftedChat, IMessage } from 'react-native-gifted-chat'
 import { StyleSheet, View } from 'react-native';
 import { getVertexAI, getGenerativeModel } from "firebase/vertexai-preview";
-import app from '../../firebaseConfig'; 
-import {PROMPT} from '../../aiConfig.js'
+import app from '@/firebaseConfig'; 
+import {PROMPT} from '@/aiConfig.js'
 
 const vertextAI = getVertexAI(app);
 const model = getGenerativeModel(
@@ -32,7 +32,7 @@ export default function ChatScreen() {
 
   const sendPrompt = async (messages: IMessage[]) => {
     const prompt = messages[0].text
-    const result = await model.generateContent(messages.map(m => m.text));
+    const result = await model.generateContent(messages[0].text);
     const text = result.response.text();
     
     setMessages(previousMessages => GiftedChat.append(previousMessages, [

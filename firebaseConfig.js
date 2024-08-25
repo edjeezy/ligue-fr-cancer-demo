@@ -9,13 +9,13 @@ import { initializeApp } from 'firebase/app';
 
 // Initialize Firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyCT0DYq9HxNgrIusxv7k8NP_lKgQMDfTds",
-    authDomain: "resrcle-portal-review.firebaseapp.com",
-    databaseURL: "https://resrcle-portal-review-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "resrcle-portal-review",
-    storageBucket: "resrcle-portal-review.appspot.com",
-    messagingSenderId: "451552606172",
-    appId: "1:451552606172:web:1510d014e4cb16dff90119"
+    apiKey: "AIzaSyCxUBSQX5SYdOcYXej6bHIperyGUlxTCd8",
+    authDomain: "color-patch-1f80f.firebaseapp.com",
+    projectId: "color-patch-1f80f",
+    storageBucket: "color-patch-1f80f.appspot.com",
+    messagingSenderId: "454736975227",
+    appId: "1:454736975227:web:547efc35a1102a501f59de",
+    measurementId: "G-HLGN8PFYST"
 };
 
 const app = initializeApp(firebaseConfig);
