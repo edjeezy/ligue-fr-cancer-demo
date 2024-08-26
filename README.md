@@ -20,7 +20,7 @@
 </a></td></tr><tr></tr></table></div>
 
 ## Regardez la demo 
-![https://drive.google.com/file/d/1L9O0LoOL0g0H7LhesCnRJzyatEew8Wer/view?usp=sharing](my_video.mov)
+![Demo](https://drive.google.com/uc?id=1L9O0LoOL0g0H7LhesCnRJzyatEew8Wer/view?usp=sharing)
 
 https://drive.google.com/file/d/1L9O0LoOL0g0H7LhesCnRJzyatEew8Wer/view?usp=sharing
 
