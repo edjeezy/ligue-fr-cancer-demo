@@ -2,7 +2,7 @@
 import {  OpenAI } from 'openai';
 
 const config = {
-    apiKey: "YOUR_API_KEY",
+    // apiKey: "YOUR_API_KEY",
     dangerouslyAllowBrowser: true
 }
 
