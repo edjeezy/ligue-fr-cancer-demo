@@ -1,17 +1,10 @@
-import React, { useState, useCallback, useEffect, useRef } from 'react'
+import React, { useState, useCallback, useEffect } from 'react'
 import { GiftedChat, IMessage } from 'react-native-gifted-chat'
-import { StyleSheet, View } from 'react-native';
-import { getVertexAI, getGenerativeModel } from "firebase/vertexai-preview";
-import app from '@/firebaseConfig'; 
-import {PROMPT} from '@/aiConfig.js'
+import { StyleSheet } from 'react-native';
 
-const vertextAI = getVertexAI(app);
-const model = getGenerativeModel(
-  vertextAI, { 
-    model: 'gemini-1.5-flash', 
-    systemInstruction: PROMPT,
-  }
-);
+import PROMPT from '@/data/prompt';
+import { ChatCompletion } from 'openai/resources';
+import openAiClient from '@/aiConfig';
 
 export default function ChatScreen() {
   const [messages, setMessages] = useState<IMessage[] | undefined>([])
@@ -30,18 +23,30 @@ export default function ChatScreen() {
     ])
   }, [])
 
+
   const sendPrompt = async (messages: IMessage[]) => {
-    const prompt = messages[0].text
-    const result = await model.generateContent(messages[0].text);
-    const text = result.response.text();
+    console.log('sending prompt');
+    
+    const prompt = messages[0].text;
+    const history = toChatArray(messages);
+    const response: ChatCompletion = await openAiClient.chat.completions.create({
+      model: "gpt-3.5-turbo",
+      messages: [
+        { role: "system", content: PROMPT },
+        ...history
+      ]
+    });
+    const aiResponse: string = response.choices[0]?.message?.content!;
+    console.log(aiResponse);
+    
+    const id = response?.id;
     
     setMessages(previousMessages => GiftedChat.append(previousMessages, [
         {
-          _id: Math.random() * 1000,
+          _id: id,
           // set the text of the message from AI response
-          text,
-          createdAt: new Date(),
-          
+          text: aiResponse,
+          createdAt: new Date(),  
           user: {
             _id: 2,
             name: 'React Native',
@@ -50,6 +55,14 @@ export default function ChatScreen() {
         },
     ]))
   }
+
+  const toChatArray = (messages: IMessage[]): { role: "user" | "assistant", content: string}[] => {
+    console.log();
+    
+    return messages.map((message) => {
+      return { role: message.user._id === 1 ? "user" : "assistant", content: message.text }
+    })
+  };
 
   const onSend = useCallback(async (messages: IMessage[] = []) => {
     setMessages(previousMessages =>
